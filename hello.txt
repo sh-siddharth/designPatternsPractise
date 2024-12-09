@@ -1,3 +1,14 @@
 hii
 this is new file
 adding something
+
+Observer pattern:
+it contains example of "Notify Me" which we usually see in ecommerce site.
+Suppose we want to buy an iphone. But currently it is out of stock.
+So we have implement to notify subscriber using onserverPattern.
+
+Where observer is NotificationSystem
+and observable is stock product which is out of stock currently.
+
+Basic idea is whenever stock status is changes i.e outOfStock i.e stockcount==0 to more.
+In this case, subscriber must be notified.
