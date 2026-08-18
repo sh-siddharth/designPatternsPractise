@@ -26,5 +26,24 @@
         "preLaunchTask": "maven-compile",
         "console": "integratedTerminal"
     }
+        ,
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Run Main via run.sh",
+            "runtimeExecutable": "/bin/bash",
+            "args": ["-lc", "./run.sh ${input:launchMainClass}"],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
 ]
+    ,
+    "inputs": [
+        {
+            "id": "launchMainClass",
+            "type": "promptString",
+            "description": "Fully-qualified main class to run via run.sh",
+            "default": "dsa.trees.LowestCommonAncestor"
+        }
+    ]
 }
