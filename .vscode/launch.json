@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run ContainerWithMostWater",
+      "request": "launch",
+      "mainClass": "dsa.slidingWindowQues.twoPointers.collisionStrategy.ContainerWithMostWater",
+      "projectName": "designPatternsPractise"
+    }
+  ]
+}
