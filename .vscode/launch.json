@@ -2,11 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",
-      "name": "Run ContainerWithMostWater",
-      "request": "launch",
-      "mainClass": "dsa.slidingWindowQues.twoPointers.collisionStrategy.ContainerWithMostWater",
-      "projectName": "designPatternsPractise"
+        "type": "java",
+        "name": "LowestCommonAncestor",
+        "request": "launch",
+        "mainClass": "dsa.trees.LowestCommonAncestor",
+        "projectName": "designPatternsPractise",
+        "preLaunchTask": "maven-compile"
+    },
+    {
+        "type": "java",
+        "name": "Run ContainerWithMostWater",
+        "request": "launch",
+        "mainClass": "dsa.slidingWindowQues.twoPointers.collisionStrategy.ContainerWithMostWater",
+        "projectName": "designPatternsPractise",
+        "preLaunchTask": "maven-compile"
     }
-  ]
+]
 }
