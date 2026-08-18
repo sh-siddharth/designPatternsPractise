@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "maven-compile",
+      "type": "shell",
+      "command": "mvn -DskipTests=true compile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [
+        "$maven-compile"
+      ]
+    }
+    ,
+    {
+      "label": "run-main-via-script",
+      "type": "shell",
+      "command": "./run.sh ${input:mainClass}",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+  ,
+  "inputs": [
+    {
+      "id": "mainClass",
+      "type": "promptString",
+      "description": "Fully-qualified main class to run",
+      "default": "dsa.trees.LowestCommonAncestor"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "type": "java",
+        "name": "LowestCommonAncestor",
+        "request": "launch",
+        "mainClass": "main.java.dsa.trees.LowestCommonAncestor",
+        "projectName": "src (2)"
+    },
+    {
+        "type": "java",
+        "name": "LowestCommonAncestor",
+        "request": "launch",
+        "mainClass": "dsa.trees.LowestCommonAncestor",
+        "projectName": "designPatternsPractise",
+        "preLaunchTask": "maven-compile",
+        "console": "integratedTerminal"
+    },
+    {
+        "type": "java",
+        "name": "Run ContainerWithMostWater",
+        "request": "launch",
+        "mainClass": "dsa.slidingWindowQues.twoPointers.collisionStrategy.ContainerWithMostWater",
+        "projectName": "designPatternsPractise",
+        "preLaunchTask": "maven-compile",
+        "console": "integratedTerminal"
+    }
+        ,
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Run Main via run.sh",
+            "runtimeExecutable": "/bin/bash",
+            "args": ["-lc", "./run.sh ${input:launchMainClass}"],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+]
+    ,
+    "inputs": [
+        {
+            "id": "launchMainClass",
+            "type": "promptString",
+            "description": "Fully-qualified main class to run via run.sh",
+            "default": "dsa.trees.LowestCommonAncestor"
+        }
+    ]
+}
